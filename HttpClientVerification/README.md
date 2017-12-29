@@ -19,11 +19,11 @@ Usage of ./goroutine:
 
 ### 不使用native方法：
 ➜  goroutine time ./goroutine   
-./goroutine  0.00s user 0.00s system 0% cpu 0.685 total
+./goroutine  0.00s user 0.00s system 0% cpu 0.735 total
 
 ```
 
 ## 分析
-异步方法只需要0.685s，而同步方法的成本约为5.368s；异步方法比同步方法更有效。
+异步方法只需要0.735s，而同步方法的成本约为5.368s；异步方法比同步方法更有效。
 
 
