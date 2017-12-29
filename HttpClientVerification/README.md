@@ -1,30 +1,29 @@
-﻿# README
 
-## 
+![](https://jersey.github.io/documentation/latest/images/rx-client-problem.png)
 
+![](https://jersey.github.io/documentation/latest/images/rx-client-sync-approach.png)
 
-![](http://o7d2h0gjo.bkt.clouddn.com/2017-12-25-15142095283938.png)
+![](https://jersey.github.io/documentation/latest/images/rx-client-async-approach.png)
 
-![](http://o7d2h0gjo.bkt.clouddn.com/2017-12-25-15142096539053.png)
-
-![](http://o7d2h0gjo.bkt.clouddn.com/2017-12-25-15142096602737.png)
-
-
-
-## Examples
+## 测试
 
 ```
+### 指令提示：
 ➜  goroutine ./goroutine -h
 Usage of ./goroutine:
-  -n    using native method or not
+  -n    Whether to use native method
+
+### 使用native方法：
 ➜  goroutine time ./goroutine -n
-./goroutine -n  0.00s user 0.00s system 0% cpu 5.465 total
-➜  goroutine time ./goroutine   
-./goroutine  0.00s user 0.00s system 0% cpu 0.744 total
+./goroutine -n  0.00s user 0.00s system 0% cpu 5.368 total
+
+### 不使用native方法：
+➜  goroutine time ./goroutine   
+./goroutine  0.00s user 0.00s system 0% cpu 0.685 total
 
 ```
 
-## Discussion
-As we have expected, the asynchronous method will be more effective, and it takes only 0.744s. But the synchronous method will cost about 5.465s. So, we can easily make a conclusion that the asynchronous method is much more effective than the synchronous one. 
+## 分析
+异步方法只需要0.685s，而同步方法的成本约为5.368s；异步方法比同步方法更有效。
 
 
