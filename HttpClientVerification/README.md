@@ -8,16 +8,16 @@
 ## 测试
 
 ```
-### 指令提示：
+指令提示：
 ➜  goroutine ./goroutine -h
 Usage of ./goroutine:
   -n    Whether to use native method
 
-### 使用native方法：
+使用native方法：
 ➜  goroutine time ./goroutine -n
 ./goroutine -n  0.00s user 0.00s system 0% cpu 5.368 total
 
-### 不使用native方法：
+不使用native方法：
 ➜  goroutine time ./goroutine   
 ./goroutine  0.00s user 0.00s system 0% cpu 0.735 total
 
