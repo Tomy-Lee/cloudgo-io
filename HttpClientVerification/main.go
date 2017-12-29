@@ -8,7 +8,7 @@ import (
 var native bool
 
 func main()  {
-	flag.BoolVar(&native, "n", false, "using native method or not")
+	flag.BoolVar(&native, "n", false, "Whether to use native method")
 	flag.Parse()
 	if native {
 		customer := Agency.GetCustomerDetails()
