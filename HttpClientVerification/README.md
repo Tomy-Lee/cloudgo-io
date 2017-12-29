@@ -1,9 +1,7 @@
 
 ![](https://jersey.github.io/documentation/latest/images/rx-client-problem.png)
 
-![](https://jersey.github.io/documentation/latest/images/rx-client-sync-approach.png)
 
-![](https://jersey.github.io/documentation/latest/images/rx-client-async-approach.png)
 
 ## 测试
 
@@ -26,4 +24,6 @@ Usage of ./goroutine:
 ## 分析
 异步方法只需要0.735s，而同步方法的成本约为5.368s；异步方法比同步方法更有效。
 
+![](https://jersey.github.io/documentation/latest/images/rx-client-sync-approach.png)
 
+![](https://jersey.github.io/documentation/latest/images/rx-client-async-approach.png)
